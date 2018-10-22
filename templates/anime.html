@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40272321</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <!-- Anime.html -->
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="/"><img border="0" src="static/home.png" width="100" height="100"></a>
+  <a href="/"><img border="0" src="static/back.png" width="100" height="100"></a>
+</div>
+
+<div class="main">
+  <div class="centertext">
+    <h1>40272321</h1>
+    <h2>Connor Ness</h2>
+    <h5></h5>
+
+	<ul>
+	{% for animes in animes %}
+		<li><a href="{{ url_for('anime_name', animename=name) }}">{{ animes }}</a></li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
+
+<!-- fr I'm just gonna be ripping some of my MAL entries from over the years
+some shit I like and some shit I don't. Probably get about 12ish entries
+that look kinda like the last screen, an image that on hover fades and brings
+up the description, clicking it could link to a page with like the same shit.-->

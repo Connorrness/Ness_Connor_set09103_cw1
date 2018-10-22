@@ -2,7 +2,8 @@
 <html>
 <head>
   <title> Homepage - 40272321 </title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <!-- homepage.html -->
 </head>
 <body>
 
@@ -10,29 +11,24 @@
   images that link to their subpages of anime and games, just to showcase
   some url hierarchy i.e. x/anime/bebop or x/games/nier -->
 
+
 <div class="sidenav">
-  <a href="homepage.html"><img border="0" src="home.png" width="100" height="100"></a>
-  <a href="homepage.html"><img border="0" src="back.png" width="100" height="100"></a>
+  <a href="/"><img border="0" src="static/home.png" width="100" height="100"></a>
+  <a href="/"><img border="0" src="static/back.png" width="100" height="100"></a>
 </div>
+
 
 <div class="main">
   <div class="centertext">
     <h1>40272321</h1>
     <h2>Connor Ness</h2>
     <h6></h6>
-
-    <div class="hometable">
-    <table align="center">
-      <tr>
-        <td><a href="anime.html"><img border="0" src="anime.png"></a></td>
-        <td><a href="games.html"><img border="0" src="games.png"></a></td>
-      </tr>
-    </table>
+        <li><a href="anime">Anime</a></li>
+        <li><a href="games">Games</a></li>
   </div>
-  </div>
+</div>
 
 <!-- aim to have those images fade on hover and the like, I'd also like
 a textbox description to show on hover with the image being faded behind -->
-</div>
 </body>
 </html>

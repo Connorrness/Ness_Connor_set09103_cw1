@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40272321</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  <!-- Games.html -->
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="/"><img border="0" src="static/home.png" width="100" height="100"></a>
+  <a href="/"><img border="0" src="static/back.png" width="100" height="100"></a>
+</div>
+
+<div class="main">
+  <div class="centertext">
+    <h1>40272321</h1>
+    <h2>Connor Ness</h2>
+    <h5></h5>
+
+    <div class="subtable">
+    <table align="center">
+	<ul>
+		{% for games in games %}
+     			<li><a href="{{ url_for('game_name', gamename=name) }}">{{ games }}</a></li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
+<!-- I could pull a couple games from the last few years
+gonna have 9 entries on each page
+just some ideas, same as the other two pages layout wise -->
