@@ -21,8 +21,8 @@
     <div class="subtable">
     <table align="center">
 	<ul>
-		{% for games in games %}
-     			<li><a href="{{ url_for('game_name', gamename=name) }}">{{ games }}</a></li>
+		{% for name in names %}
+     			<li><a href="{{ url_for('game_name', gamename=name) }}">{{ name }}</a></li>
 		{% endfor %}
 	</ul>
 </body>

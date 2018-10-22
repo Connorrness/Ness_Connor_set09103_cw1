@@ -19,8 +19,8 @@
     <h5></h5>
 
 	<ul>
-	{% for animes in animes %}
-		<li><a href="{{ url_for('anime_name', animename=name) }}">{{ animes }}</a></li>
+	{% for name in names %}
+		<li><a href="{{ url_for('anime_name', animename=name) }}">{{ name }}</a></li>
 	{% endfor %}
 	</ul>
 </body>
